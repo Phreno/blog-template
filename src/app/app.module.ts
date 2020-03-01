@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ArticleComponent } from './article/article.component';
 import { Routes, RouterModule } from '@angular/router';
+import { PageInconnueComponent } from './page-inconnue/page-inconnue.component';
 
 const appRoutes: Routes = [
   { path: 'action', component: ArticleComponent }
@@ -14,7 +15,8 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    ArticleComponent
+    ArticleComponent,
+    PageInconnueComponent
   ],
   imports: [
     BrowserModule,
