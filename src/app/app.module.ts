@@ -8,10 +8,12 @@ import { ArticleComponent } from './article/article.component';
 import { Routes, RouterModule } from '@angular/router';
 import { PageInconnueComponent } from './page-inconnue/page-inconnue.component';
 import { BonjourComponent } from './bonjour/bonjour.component';
+import { ListeDesArticlesComponent } from './liste-des-articles/liste-des-articles.component';
 
 const appRoutes: Routes = [
   { path: '', component: BonjourComponent, pathMatch: 'full' },
   { path: 'article', component: ArticleComponent },
+  { path: 'liste-des-articles', component: ListeDesArticlesComponent },
   { path: '**', component: PageInconnueComponent }
 ];
 
@@ -20,7 +22,8 @@ const appRoutes: Routes = [
     AppComponent,
     ArticleComponent,
     PageInconnueComponent,
-    BonjourComponent
+    BonjourComponent,
+    ListeDesArticlesComponent
   ],
   imports: [
     BrowserModule,
