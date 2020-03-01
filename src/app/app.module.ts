@@ -9,8 +9,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { PageInconnueComponent } from './page-inconnue/page-inconnue.component';
 
 const appRoutes: Routes = [
-  { path: 'action', component: ArticleComponent },
-  { path: 'page-inconnue', component: PageInconnueComponent }
+  { path: 'article', component: ArticleComponent },
+  { path: '**', component: PageInconnueComponent }
 ];
 
 @NgModule({
