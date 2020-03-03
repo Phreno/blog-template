@@ -122,5 +122,8 @@
       }
     }
   },
-  "defaultProject": "blog-template"
+  "defaultProject": "blog-template",
+  "cli": {
+    "analytics": false
+  }
 }
