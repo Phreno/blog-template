@@ -10,6 +10,7 @@ import { PageInconnueComponent } from './page-inconnue/page-inconnue.component';
 import { BonjourComponent } from './bonjour/bonjour.component';
 import { ListeDesArticlesComponent } from './liste-des-articles/liste-des-articles.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 const appRoutes: Routes = [
   { path: '', component: BonjourComponent, pathMatch: 'full' },
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    MDBBootstrapModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
