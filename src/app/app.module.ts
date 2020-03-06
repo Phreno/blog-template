@@ -11,6 +11,7 @@ import { BonjourComponent } from './bonjour/bonjour.component';
 import { ListeDesArticlesComponent } from './liste-des-articles/liste-des-articles.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { PiedDePageComponent } from './pied-de-page/pied-de-page.component';
 
 const appRoutes: Routes = [
   { path: '', component: BonjourComponent, pathMatch: 'full' },
@@ -26,7 +27,8 @@ const appRoutes: Routes = [
     PageInconnueComponent,
     BonjourComponent,
     ListeDesArticlesComponent,
-    NavigationComponent
+    NavigationComponent,
+    PiedDePageComponent
   ],
   imports: [
     BrowserModule,
