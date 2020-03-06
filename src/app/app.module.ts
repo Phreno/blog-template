@@ -9,6 +9,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PageInconnueComponent } from './page-inconnue/page-inconnue.component';
 import { BonjourComponent } from './bonjour/bonjour.component';
 import { ListeDesArticlesComponent } from './liste-des-articles/liste-des-articles.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 const appRoutes: Routes = [
   { path: '', component: BonjourComponent, pathMatch: 'full' },
@@ -23,7 +24,8 @@ const appRoutes: Routes = [
     ArticleComponent,
     PageInconnueComponent,
     BonjourComponent,
-    ListeDesArticlesComponent
+    ListeDesArticlesComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
