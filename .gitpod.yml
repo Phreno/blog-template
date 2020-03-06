@@ -1,4 +1,4 @@
 tasks:
   - init: npm install && npm run build
     command: npm run start
-    command: npm install -g @angular/cli
+  - command: npm install -g @angular/cli
