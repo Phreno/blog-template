@@ -3,11 +3,13 @@
 		<app-navigation></app-navigation>
 	</header>
 
-	<main role="main" class="container">
-		<router-outlet></router-outlet>
+	<main role="main" class="container mt-5">
+		<div [@routeAnimations]="prepareRoute(outlet)">
+			<router-outlet #outlet="outlet"></router-outlet>
+		</div>
 	</main>
 
-	<footer>
+	<!-- <footer>
 		<app-pied-de-page></app-pied-de-page>
-	</footer>
+	</footer> -->
 </body>

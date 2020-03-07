@@ -14,10 +14,10 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { PiedDePageComponent } from './pied-de-page/pied-de-page.component';
 
 const appRoutes: Routes = [
-  { path: '', component: BonjourComponent, pathMatch: 'full' },
-  { path: 'article', component: ArticleComponent },
-  { path: 'liste-des-articles', component: ListeDesArticlesComponent },
-  { path: '**', component: PageInconnueComponent }
+  { path: '', component: BonjourComponent, pathMatch: 'full', data: { animation: 'Acceuil' } },
+  { path: 'article', component: ArticleComponent, data: { animation: 'Article' } },
+  { path: 'liste-des-articles', component: ListeDesArticlesComponent, data: { animation: 'Articles' } },
+  { path: '**', component: PageInconnueComponent, data: { animation: 'Inconnue' } }
 ];
 
 @NgModule({
